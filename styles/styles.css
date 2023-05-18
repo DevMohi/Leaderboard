@@ -138,6 +138,11 @@ hr {
   .container {
     width: 100%;
   }
+
+  .section-title {
+    align-items: center;
+  }
+
   .players,
   .blogs,
   .courses {
@@ -155,10 +160,23 @@ hr {
   .container {
     width: 100%;
   }
-  .players , .courses{
-    grid-template-columns: repeat(2, 1fr);
+
+  .section-title {
+    text-align: center;
   }
-  .blogs{
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 30px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .blogs {
     grid-template-columns: repeat(1, 1fr);
+    place-items: center;
   }
 }
